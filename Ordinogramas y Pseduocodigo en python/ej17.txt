@@ -1,0 +1,28 @@
+Pruebas Caja negra
+| Entrada     | Descripción            | Salida esperada    |
+| ----------- | ---------------------- | ------------------ |
+| `123`       | Número positivo normal | `3`                |
+| `0`         | Número cero            | `0`                |
+| `-4567`     | Número negativo        | `4`                |
+| `100000`    | Número con ceros       | `6`                |
+| `999999999` | Número muy grande      | `9`                |
+| `abc`       | Entrada no numérica    | Error (ValueError) |
+
+Pruebas Caja Blancas
+
+Caminos a testear
+1. numero < 0: sí y no (para probar el if)
+2. numero >= 1: cuántas veces entra al while
+3. Cuando numero es 0, que unca entra al while
+
+Casos:
+|Caso  |Entrada  |Condiciones cubiertas             |Salida esperada|
+|------|---------|----------------------------------|---------------|
+|1     |123      |if falso, while se ejecuta 3 veces|3              |
+|2     |-123     |if verdadero, while 3 veces       |3              |
+|3     |0        |if falso, while no se ejecuta     |0              |
+
+
+
+
+
